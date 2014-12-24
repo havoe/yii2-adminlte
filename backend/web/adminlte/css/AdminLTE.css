@@ -113,6 +113,7 @@ body.fixed .wrapper {
   padding: 20px 15px;
   background: #f9f9f9;
   overflow: auto;
+  font-size: 10px;
 }
 /* Utility */
 /* H1 - H6 font */
@@ -1134,6 +1135,7 @@ body > .header .logo .icon {
   -moz-border-radius: 0px !important;
   border-radius: 0px !important;
   box-shadow: none;
+  font-size: 10px;
 }
 .form-control:focus {
   border-color: #3c8dbc !important;
