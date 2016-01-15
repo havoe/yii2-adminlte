@@ -158,7 +158,8 @@ class Menu extends \yii\widgets\Menu
         if (isset($item['url']) && is_array($item['url']) && isset($item['url'][0])) {
             $route = $item['url'][0];
             if ($route[0] !== '/' && Yii::$app->controller) {
-                $route = Yii::$app->controller->module->getUniqueId() . '/' . $route;
+                // $route = Yii::$app->controller->module->getUniqueId() . '/' . $route;
+                $route = Yii::$app->controller->id .Yii::$app->controller->module->id. '/' . $route;
             }
             $arrayRoute = explode('/', ltrim($route, '/'));
             $arrayThisRoute = explode('/', $this->route);
